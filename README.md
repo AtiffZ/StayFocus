@@ -31,6 +31,11 @@ arXiv preprint: arXiv:1609.01885
     - Frustration
 
 ### D. Network Description
+*Face Detection and Localisation*
+
+- Caffe model using OpenCV’s DNN module
+
+*Classification*
 - Pretrained model: VGG 16
 - Fine tuning: fc2, predictions layer
 
