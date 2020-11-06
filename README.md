@@ -1,39 +1,22 @@
 # _**StayFocus**_
 
-## Engagement Detection of Students during Online Learning
+## Online Learning Engagement Using Facial Expression
 
-### A. Name of project
+### A. Description of the project
 
-**StayFocus**
+#### i. Project Description
+![Diagram](./StayFocus.png)
 
-### B. Description of the project
-
-#### i. Example Detection
-- Boredom:
-
-![Boredom](./boredom.jpeg)
-
-- Confusion:
-
-![Confusion](./confuse.PNG)
-
-- Engagement:
-
-![Engagement](./engage.PNG)
-
-- Frustration:
-
-![Frustration](./frust.PNG)
 
 #### ii. Input and output information
 - **Input:** Webcam as video input
 - **Output:** Classification (emotion) with Localization (bounding box)
 
-### C. Motivation of the idea
+### B. Motivation of the idea
 - Currently, there are a lot of online learning done by schools and universities due to the pandemic. Therefore, we think by doing this project, it will help the teachers monitor the students of their engagement during the lessons.
 - This project also our CDLE capstone project.
 
-### D. Data Set Sources
+### C. Data Set Sources
 - **Dataset**: DAiSEE dataset. The dataset can be download [here](https://iith.ac.in/~daisee-dataset/).
 
 ```
@@ -47,21 +30,28 @@ arXiv preprint: arXiv:1609.01885
     - Engagement
     - Frustration
 
-### E. Network Description
+### D. Network Description
 - Pretrained model: VGG 16
 - Fine tuning: fc2, predictions layer
 
-### F. Model Training
-- Train for 20 epochs on CPU (i5 9th gen).
-- Sample frames of 10 videos from DAiSEE dataset
+### E. Model Training
+
+*Dataset Preprossessing*
+1. Randomly select 12 videos per class [Very High (3) level]
+2. Extract 30 frames per video
+3. Total 360 images per class in the dataset
+
+*Training Details*
+- Split dataset into 70:30 ratio (70% training set)
+- Train for 20 epochs on CPU (i5 9th gen)
 - Duration: ~3 hours
 - Accuracy: 73.51%
 
-### G. Testing
-- Sample frames of 2 videos from DAiSEE dataset
+### F. Testing
+- Remaining 30% from the dataset split
 - Accuracy: 78.94%
 
-### H. Future Development
+### G. Future Development
 - Gesture Detection
     - To include body gesture into the model
 - Support Message
@@ -69,10 +59,6 @@ arXiv preprint: arXiv:1609.01885
 - Engagement Gauge
     - To give feedbacks to teachers about the students' focus level
 
-### I. Contact information
+### H. List of Group members
 - Atiff Zakwan, atiffzakwan@gmail.com
 - Soo Wan Yong, wanyong_soo@hotmail.com
-
-### J. List of Group members
-- Atiff Zakwan
-- Soo Wan Yong
