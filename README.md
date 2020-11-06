@@ -9,7 +9,7 @@
 ### B. Description of the project
 
 #### i. Project Description
-(Diagram Pending)
+![Diagram](./StayFocus.png)
 
 
 #### ii. Input and output information
