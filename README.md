@@ -8,22 +8,9 @@
 
 ### B. Description of the project
 
-#### i. Example Detection
-- Boredom:
+#### i. Project Description
+(Diagram Pending)
 
-![Boredom](./boredom.jpeg)
-
-- Confusion:
-
-![Confusion](./confuse.PNG)
-
-- Engagement:
-
-![Engagement](./engage.PNG)
-
-- Frustration:
-
-![Frustration](./frust.PNG)
 
 #### ii. Input and output information
 - **Input:** Webcam as video input
